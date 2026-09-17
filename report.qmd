@@ -1,0 +1,13 @@
+---
+title: "penguins_analysis"
+format: 
+    html:
+        embed-resources: true
+---
+
+
+```{r}
+data <- read.csv("data/penguins.csv")
+
+mean(data$bill_len)
+```

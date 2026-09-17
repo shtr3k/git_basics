@@ -9,7 +9,9 @@ format:
 ```{r}
 data <- read.csv("data/penguins.csv")
 
-x <- data$bill_len
 
-boxplot(x, ylab = "Bill length, mm")
+x <- data$bill_len
+g <- data$sex
+
+boxplot(x ~ g, xlab = "Sex", ylab = "Bill length, mm")
 ```
